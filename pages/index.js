@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { observer } from "mobx-react";
 import Field from "../lib/field";
+import { Github, Twitter, LinkedIn } from "../lib/icons";
 
 const HappyCry = () => (
   <span className="face">
@@ -19,7 +20,7 @@ const HappyCry = () => (
       }
       span.face:hover span.tear {
         opacity: 0;
-        transform: translateX(-30%) translateY(20%) scale(0.2);
+        transform: translateX(-30%) translateY(25%) scale(0.2);
       }
       span.blush {
         position: absolute;
@@ -82,7 +83,7 @@ export default class Index extends React.Component {
             margin: 0;
           }
         `}</style>
-        <style jsx>{`
+        <style global jsx>{`
           h1,
           h2,
           h3 {
@@ -150,6 +151,10 @@ export default class Index extends React.Component {
           .contact a {
             color: #2950c3;
           }
+          .contact svg {
+            width: 12px;
+            height: 12px;
+          }
         `}</style>
         <Head>
           <title>Graham Kaemmer</title>
@@ -158,7 +163,6 @@ export default class Index extends React.Component {
             content="I'm Graham. I like to build things for human people."
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <script src="https://use.fontawesome.com/011cf1be88.js" />
           <link rel="icon" href="/static/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
@@ -191,15 +195,15 @@ export default class Index extends React.Component {
             </p>
             <p>
               <a href="https://github.com/gkaemmer">
-                <i className="fa fa-github" />
+                <Github color={"#2950c3"}/>
               </a>{" "}
               &nbsp;{" "}
               <a href="https://www.linkedin.com/pub/graham-kaemmer/33/727/363">
-                <i className="fa fa-linkedin" />
+                <LinkedIn color={"#2950c3"}/>
               </a>{" "}
               &nbsp;{" "}
               <a href="https://twitter.com/grahamkaemmer">
-                <i className="fa fa-twitter" />
+                <Twitter color={"#2950c3"}/>
               </a>{" "}
               &nbsp;{" "}
             </p>
