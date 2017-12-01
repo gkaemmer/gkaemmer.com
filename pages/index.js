@@ -168,6 +168,14 @@ export default class Index extends React.Component {
             href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
             rel="stylesheet"
           />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49706449-2"></script>
+          <script dangerouslySetInnerHTML={{__html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-49706449-2');
+          `}} />
         </Head>
         <canvas id="background" />
         <div className="container">
