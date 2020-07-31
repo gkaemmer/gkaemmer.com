@@ -77,7 +77,9 @@ export default class Index extends React.Component {
       <div>
         <style global jsx>{`
           body {
-            font-family: Lato, Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+              Helvetica, Arial, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Symbol";
             font-weight: 300;
             color: #333;
             margin: 0;
@@ -164,18 +166,21 @@ export default class Index extends React.Component {
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/static/favicon.ico" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-            rel="stylesheet"
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-49706449-2"
           />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49706449-2"></script>
-          <script dangerouslySetInnerHTML={{__html: `
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'UA-49706449-2');
-          `}} />
+          `
+            }}
+          />
         </Head>
         <canvas id="background" />
         <div className="container">
@@ -203,15 +208,15 @@ export default class Index extends React.Component {
             </p>
             <p>
               <a href="https://github.com/gkaemmer">
-                <Github color={"#2950c3"}/>
+                <Github color={"#2950c3"} />
               </a>{" "}
               &nbsp;{" "}
               <a href="https://www.linkedin.com/pub/graham-kaemmer/33/727/363">
-                <LinkedIn color={"#2950c3"}/>
+                <LinkedIn color={"#2950c3"} />
               </a>{" "}
               &nbsp;{" "}
               <a href="https://twitter.com/grahamkaemmer">
-                <Twitter color={"#2950c3"}/>
+                <Twitter color={"#2950c3"} />
               </a>{" "}
               &nbsp;{" "}
             </p>
