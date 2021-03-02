@@ -166,21 +166,6 @@ export default class Index extends React.Component {
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/static/favicon.ico" />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-49706449-2"
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-49706449-2');
-          `
-            }}
-          />
         </Head>
         <canvas id="background" />
         <div className="container">
@@ -202,8 +187,10 @@ export default class Index extends React.Component {
         <div className="footer">
           <div className="contact">
             <p>
-              Graham Kaemmer<br />
-              Developer<br />
+              Graham Kaemmer
+              <br />
+              Developer
+              <br />
               graham <span>(at)</span> gkaemmer.com
             </p>
             <p>
